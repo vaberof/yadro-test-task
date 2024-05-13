@@ -64,7 +64,6 @@ type computerClubServiceImpl struct {
 const startBufSize = 512
 
 const minTablesCount = 1
-const layoutHoursMinutes = "15:04"
 
 func NewComputerClub(config *Config) ComputerClubService {
 	tables := make(map[TableId]Table)

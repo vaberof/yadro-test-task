@@ -7,6 +7,8 @@ import (
 
 type WorkingDayReport []byte
 
+const layoutHoursMinutes = "15:04"
+
 func (w *WorkingDayReport) writeEvent(eventTime time.Time, eventType uint8, clientName ClientName) {
 	*w = append(*w, []byte(w.buildEvent(eventTime, eventType, clientName))...)
 }
